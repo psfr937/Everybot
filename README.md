@@ -4,7 +4,7 @@ Title: Everybot (This could be changed) <br />
 
 Component: <br />
 
-Android App to: <br />
+Android App installed in mobile: <br />
 *Graphical user interface with proper user options<br />
 *Send user command to EV3 via any one wifi <br />
 *Find Android device location using 3-points wifi positioning <br />
