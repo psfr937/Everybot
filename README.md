@@ -1,6 +1,6 @@
-# EE 3274
+# Everybot
 
-Title: Everybot (This could be changed) <br />
+Indoor driveless robot and application <br />
 
 Component: <br />
 
