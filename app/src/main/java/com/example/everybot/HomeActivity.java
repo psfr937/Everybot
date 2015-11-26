@@ -8,11 +8,11 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.util.Log;
-import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -20,7 +20,7 @@ import java.util.List;
 
 public class HomeActivity extends Activity {
         private AccessPoint[] knownAPs;
-        private int refreshRate = 1000; // ms second
+        private int refreshRate = 1000; // per second
 
         ImageView[] accessPoints = new ImageView[3];
         ImageView device;
@@ -32,27 +32,27 @@ public class HomeActivity extends Activity {
                 ArrayList<AccessPoint> aps = new ArrayList<AccessPoint>();
                 // AP1
                 AccessPoint ap = new AccessPoint();
-                ap.setMacAddress("00:22:55:e0:eb:71");
+                ap.setMacAddress("F4:F2:6D:2B:AE:50");
 
-                ap.getCoordinates().setX(76);
-                ap.getCoordinates().setY(1000);
+                ap.getCoordinates().setX(50);
+                ap.getCoordinates().setY(150);
                 aps.add(ap);
                 //ap.setSignalStrengthToDistanceRatio(2.3);
 
                 // AP2
                 ap = new AccessPoint();
-                ap.setMacAddress("00:22:55:e0:89:61");
+                ap.setMacAddress("F4:F2:6D:2B:AF:E8");
 
-                ap.getCoordinates().setX(614);
-                ap.getCoordinates().setY(1000);
+                ap.getCoordinates().setX(800);
+                ap.getCoordinates().setY(800);
                 aps.add(ap);
                 //ap.setSignalStrengthToDistanceRatio(2.3);
 
                 // AP3
                 ap = new AccessPoint();
-                ap.setMacAddress("00:0e:83:ed:20:41");
-                ap.getCoordinates().setX(152);
-                ap.getCoordinates().setY(800);
+                ap.setMacAddress("F4:F2:6D:2B:B1:A8");
+                ap.getCoordinates().setX(70);
+                ap.getCoordinates().setY(1700);
                 aps.add(ap);
                 //ap.setSignalStrengthToDistanceRatio(2.3);
 
@@ -114,7 +114,7 @@ public class HomeActivity extends Activity {
 
                 // AP11
                 ap = new AccessPoint();
-                ap.setMacAddress("000:22:90:38:43:d1");
+                ap.setMacAddress("00:22:90:38:43:d1");
                 ap.getCoordinates().setX(384);
                 ap.getCoordinates().setY(200);
                 aps.add(ap);
@@ -134,6 +134,8 @@ public class HomeActivity extends Activity {
         public void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.main);
+
+
 
                 accessPoints[0] = (ImageView) findViewById(R.id.apImageView1);
                 accessPoints[1] = (ImageView) findViewById(R.id.apImageView2);
@@ -174,7 +176,7 @@ public class HomeActivity extends Activity {
                                                 + " access points.");
 
                                         // update signal strength level
-                                        for (int i = 0; i < knownAPs.length; i++) {
+                                        for (int i = 0; i < 3; i++) {
                                                 knownAPs[i]
                                                         .setSignalLevel(AccessPoint.MIN_SIGNAL_LEVEL);
                                                 for (ScanResult scanResult : scanResults) {
@@ -189,8 +191,11 @@ public class HomeActivity extends Activity {
                                                                 knownAPs[i].setTimestamp(new Date());
 
                                                                 publishProgress("found AP Mac Address = "
-                                                                        + scanResult.BSSID + " at "
-                                                                        + knownAPs[i].getCoordinates()
+                                                                        + scanResult.BSSID
+                                                                        + " with Frequency ="
+                                                                        + knownAPs[i].getSignalFrequency()
+                                                                        + " with Level ="
+                                                                        + knownAPs[i].getSignalLevel()
                                                                         + " with distance = "
                                                                         + knownAPs[i].getDistance());
 
@@ -200,8 +205,10 @@ public class HomeActivity extends Activity {
                                                 }
                                         }
 
+
+
                                         // sort known access points with signal strength descending
-                                        for (int i = 0; i < knownAPs.length - 1; i++) {
+                                 /*       for (int i = 0; i < knownAPs.length - 1; i++) {
                                                 for (int j = i + 1; j < knownAPs.length; j++) {
                                                         if (knownAPs[i].getSignalLevel() < knownAPs[j]
                                                                 .getSignalLevel()) {
@@ -210,21 +217,22 @@ public class HomeActivity extends Activity {
                                                                 knownAPs[j] = tmp;
                                                         }
                                                 }
-                                        }
+                                        } */
                                         // if there are less than 3 access points discovered, show
                                         // the message
                                         if (knownAPs[2].getSignalLevel() == AccessPoint.MIN_SIGNAL_LEVEL) {
-                                                final String s = "There are not enough known access points to calculate the position.";
-                                                publishProgress(s);
+                                              //  publishProgress("Device position: " + position);
                                                 runOnUiThread(new Runnable() {
                                                         @Override
                                                         public void run() {
-                                                                Toast toast = Toast.makeText(
-                                                                        HomeActivity.this
-                                                                                .getApplicationContext(),
-                                                                        s, Toast.LENGTH_SHORT);
-                                                                toast.setGravity(Gravity.CENTER, 0, 0);
-                                                                toast.show();
+
+
+                                                                final CoordinatorLayout coordinatorLayout = (CoordinatorLayout) findViewById(R.id
+                                                                        .coordinatorLayout);
+                                                                Snackbar snackbar = Snackbar
+                                                                        .make(coordinatorLayout, "There are not enough known access points to calculate the position.", Snackbar.LENGTH_LONG);
+                                                                snackbar.show();
+
                                                         }
                                                 });
 
@@ -237,6 +245,7 @@ public class HomeActivity extends Activity {
 
                                                         @Override
                                                         public void run() {
+
                                                                 StringBuilder sb = new StringBuilder();
                                                                 for (int i = 0; i < 3; i++) {
                                                                         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
@@ -276,12 +285,7 @@ public class HomeActivity extends Activity {
 //                                                                              sb.toString(), Toast.LENGTH_LONG)
 //                                                                              .show();
 
-                                                                Toast toast = Toast.makeText(
-                                                                        HomeActivity.this
-                                                                                .getApplicationContext(),
-                                                                        sb.toString(), Toast.LENGTH_SHORT);
-                                                                toast.setGravity(Gravity.CENTER, 0, 0);
-                                                                toast.show();
+
                                                         }
                                                 });
 

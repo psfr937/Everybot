@@ -27,8 +27,12 @@ ADDED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidM
 		ADDED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidManifest.xml:6:22-65
 application
 ADDED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidManifest.xml:9:5-23:19
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:22.2.0] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidManifest.xml:12:9-41
 	android:allowBackup
@@ -55,8 +59,12 @@ ADDED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidM
 		ADDED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:22.2.0] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Raymond\AndroidStudioProjects\Everybot\app\src\main\AndroidManifest.xml
