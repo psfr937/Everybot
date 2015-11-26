@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\denseC64\0.28\596ae7ecdfbf0938c34b2433947fbd97acba1055\denseC64-0.28.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-49f32dc4dc5aa0d3991e178f5315e18c073ca532.jar" />
+        sha1="596ae7ecdfbf0938c34b2433947fbd97acba1055">
+        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\denseC64-0.28-b715859a7d5d7ef177d4030645160b063440b8f8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\classes-cf241245f7a76d5d55137e07d499c35144b9d737.jar" />
+    </item>
+    <item
+        jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\all\0.28\ec528bde7536d2e5c39aafc12f19987b9279755\all-0.28.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0ec528bde7536d2e5c39aafc12f19987b9279755">
+        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\all-0.28-197c55bdea255e63d83f18494e2b09377f37bddc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\core\0.28\d02bf881401f8a005a58b91e87198d18b77347dc\core-0.28.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d02bf881401f8a005a58b91e87198d18b77347dc">
+        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\core-0.28-14bb362c4dff7222a1b753d0f1aa280b38b9fe2d.jar" />
     </item>
     <item
         jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\dense64\0.28\b79609796212567ed4e6f361c6f30cffd009e4a3\dense64-0.28.jar"
@@ -16,11 +37,11 @@
         <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\dense64-0.28-c1e0361eaa6ac61749fce08d2ff22df0889eb21c.jar" />
     </item>
     <item
-        jar="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jar="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\classes-8bc7af99605285295654a3dfe6589297d9abc325.jar" />
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-49f32dc4dc5aa0d3991e178f5315e18c073ca532.jar" />
     </item>
     <item
         jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\equation\0.28\1eecb7fdf79cdf91a49da24af70984ced2138914\equation-0.28.jar"
@@ -28,13 +49,6 @@
         revision="21.1.2"
         sha1="1eecb7fdf79cdf91a49da24af70984ced2138914">
         <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\equation-0.28-73f0a7a1f9842d52bcfb973d7d137433d1b5de2b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\classes-cf241245f7a76d5d55137e07d499c35144b9d737.jar" />
     </item>
     <item
         jar="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
@@ -51,18 +65,11 @@
         <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-b052a2ccd5cb5c82a707124376314e23315e0373.jar" />
     </item>
     <item
-        jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\denseC64\0.28\596ae7ecdfbf0938c34b2433947fbd97acba1055\denseC64-0.28.jar"
+        jar="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="596ae7ecdfbf0938c34b2433947fbd97acba1055">
-        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\denseC64-0.28-b715859a7d5d7ef177d4030645160b063440b8f8.jar" />
-    </item>
-    <item
-        jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\core\0.28\d02bf881401f8a005a58b91e87198d18b77347dc\core-0.28.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d02bf881401f8a005a58b91e87198d18b77347dc">
-        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\core-0.28-14bb362c4dff7222a1b753d0f1aa280b38b9fe2d.jar" />
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\classes-8bc7af99605285295654a3dfe6589297d9abc325.jar" />
     </item>
     <item
         jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\simple\0.28\9ed74a2da17f469fc35f6bdb99f44888cf46eb4e\simple-0.28.jar"
@@ -70,13 +77,6 @@
         revision="21.1.2"
         sha1="9ed74a2da17f469fc35f6bdb99f44888cf46eb4e">
         <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\simple-0.28-1f72b6f7c5b581cef0e0d5b76847637c28ce61ce.jar" />
-    </item>
-    <item
-        jar="C:\Users\Raymond\.gradle\caches\modules-2\files-2.1\org.ejml\all\0.28\ec528bde7536d2e5c39aafc12f19987b9279755\all-0.28.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="0ec528bde7536d2e5c39aafc12f19987b9279755">
-        <dex dex="C:\Users\Raymond\AndroidStudioProjects\Everybot\app\build\intermediates\pre-dexed\debug\all-0.28-197c55bdea255e63d83f18494e2b09377f37bddc.jar" />
     </item>
 
 </items>

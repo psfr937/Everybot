@@ -77,7 +77,7 @@ public class AccessPoint {
         }
 
         public double getDistance() {
-            double exp = (27.55 - (20 * Math.log10(this.getSignalFrequency())) - Math.abs(this.getSignalLevel())) / 20.0;
+            double exp = (27.55 - (20 * Math.log10(this.getSignalFrequency())) + Math.abs(this.getSignalLevel())) / 20.0;
             return Math.pow(10.0, exp);
             //return signalLevel*50;
             //return signalStrengthToDistanceRatio*(100+signalLevel);

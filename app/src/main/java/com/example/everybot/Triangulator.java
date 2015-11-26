@@ -1,5 +1,7 @@
 package com.example.everybot;
 
+import android.util.Log;
+
 /**
  * Created by Raymond on 06/11/2015.
  */
@@ -27,7 +29,8 @@ public class Triangulator {
         Det = A * D - B * C;
         DetX = E * D - B * F;
         DetY = A * F - E * C;
-
+        Log.i("Mat","A = " + A + " B = " + B + " C = " + C + " D = " + D + " E = " + E + " F = " + F);
+        Log.i("Det", "Det: " + String.valueOf(Det) + " DetX: " + String.valueOf(DetX) + "DetY: " + String.valueOf(DetY));
         return new Point2D(DetX / Det, DetY / Det);
 
     }

@@ -34,8 +34,8 @@ public class HomeActivity extends Activity {
                 AccessPoint ap = new AccessPoint();
                 ap.setMacAddress("F4:F2:6D:2B:AE:50");
 
-                ap.getCoordinates().setX(50);
-                ap.getCoordinates().setY(150);
+                ap.getCoordinates().setX(0);
+                ap.getCoordinates().setY(0);
                 aps.add(ap);
                 //ap.setSignalStrengthToDistanceRatio(2.3);
 
@@ -43,16 +43,16 @@ public class HomeActivity extends Activity {
                 ap = new AccessPoint();
                 ap.setMacAddress("F4:F2:6D:2B:AF:E8");
 
-                ap.getCoordinates().setX(800);
-                ap.getCoordinates().setY(800);
+                ap.getCoordinates().setX(8);
+                ap.getCoordinates().setY(0);
                 aps.add(ap);
                 //ap.setSignalStrengthToDistanceRatio(2.3);
 
                 // AP3
                 ap = new AccessPoint();
                 ap.setMacAddress("F4:F2:6D:2B:B1:A8");
-                ap.getCoordinates().setX(70);
-                ap.getCoordinates().setY(1700);
+                ap.getCoordinates().setX(4);
+                ap.getCoordinates().setY(4);
                 aps.add(ap);
                 //ap.setSignalStrengthToDistanceRatio(2.3);
 
@@ -120,10 +120,11 @@ public class HomeActivity extends Activity {
                 aps.add(ap);
                 //ap.setSignalStrengthToDistanceRatio(2.3);
 
+
                 RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                         32, 32);
-                params.leftMargin = (int) ap.getCoordinates().getX();
-                params.topMargin = (int) ap.getCoordinates().getY();
+                params.leftMargin = (int) ap.getCoordinates().getX()* 50 + 200;
+                params.topMargin = (int) ap.getCoordinates().getY() * 50 + 500;
                 accessPoints[0].setLayoutParams(params);
 
                 knownAPs = aps.toArray(new AccessPoint[aps.size()]);
@@ -156,7 +157,7 @@ public class HomeActivity extends Activity {
 
                 @Override
                 protected Void doInBackground(Void... arg0) {
-                        while (!HomeActivity.this.isStopScanning) {
+                                while (!HomeActivity.this.isStopScanning) {
                                 WifiManager.WifiLock wifiLock = wifiManager.createWifiLock(
                                         WifiManager.WIFI_MODE_SCAN_ONLY,
                                         "WifiSignalStrengthCollector");
@@ -184,7 +185,7 @@ public class HomeActivity extends Activity {
                                                         if (knownAPs[i].getMacAddress().toLowerCase()
                                                                 .compareTo(scanResult.BSSID.toLowerCase()) == 0) {
 
-                                                                knownAPs[i].setSignalLevel(WifiManager.calculateSignalLevel(scanResult.level, 10));
+                                                                knownAPs[i].setSignalLevel(scanResult.level);
 
                                                                 knownAPs[i].setSignalFrequency(wifiInfo.getFrequency());
                                                                 knownAPs[i].setSSID(scanResult.SSID);
@@ -251,9 +252,9 @@ public class HomeActivity extends Activity {
                                                                         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                                                                                 32, 32);
                                                                         params.leftMargin = (int) knownAPs[i]
-                                                                                .getCoordinates().getX();
+                                                                                .getCoordinates().getX() * 50 + 200;
                                                                         params.topMargin = (int) knownAPs[i]
-                                                                                .getCoordinates().getY();
+                                                                                .getCoordinates().getY() * 50 + 500;
                                                                         accessPoints[i].setLayoutParams(params);
 
                                                                         sb.append("AP" + (i + 1) + " ("
@@ -270,8 +271,8 @@ public class HomeActivity extends Activity {
 
                                                                 RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                                                                         32, 32);
-                                                                params.leftMargin = (int) position.getX();
-                                                                params.topMargin = (int) position.getY();
+                                                                params.leftMargin = (int) position.getX()* 50 + 200;
+                                                                params.topMargin = (int) position.getY() * 50 + 500;
                                                                 device.setLayoutParams(params);
                                                                 Log.d("POSITION", "left: " + device.getLeft()
                                                                         + ", top: " + device.getTop());
